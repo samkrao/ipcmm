@@ -98,9 +98,9 @@ Provide configure management and monitoring system which is light weight and hig
 		+ proc:
 		+ lambda:
 	
-	\<Label\>:
-  	  \<build in functions\>:
-	    \- target:
+	\<Label\>:\
+  	  \<build in functions\>:\
+	    \- target:\
 	    \- env:
 	    \- args:
 	        \- 1
