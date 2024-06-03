@@ -100,7 +100,7 @@ Provide configure management and monitoring system which is light weight and hig
 	
 	\<Label\>:\
   	  &nbsp; &nbsp; &nbsp; \<build in functions\>:\
-	    &ensp; &ensp; &ensp; &ensp; &ensp; &ensp;\- target:\
+	     &ensp; &ensp; &ensp; &ensp;\- target:\
 	     &emsp; &emsp; &emsp; \- env:\
 	     &emsp; &emsp; &emsp;  \- args:\
 	        \- 1
