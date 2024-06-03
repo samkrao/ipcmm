@@ -6,71 +6,57 @@ Scripting
 * Available on almost all kinds of oses only installation needed is for windos
 * Multi threading  byThread and threading
 * Async by asyncio
-•	Multi processing by multiprocessing
-•	Concurrent by concurrent	
-•	Event driven
-o	eventlet
-o	Twisted
-o	Tornado
-•	Reactor
-o	Twisted
-o	Reactor
-•	Fibers
-o	Fibers
-o	Greenlet
-•	Coroutines/generator
-o	Yield keyword/method
-•	Easy system calls to run system commands
-o	Sys, os, shutils etc
-•	Pointers ????
-o	Pointers.py pip
-
-Our Software: Features
-•	Cluster
-o	HA
-o	Active/Passive
-o	Primary/Secondary
-•	Federation
-o	Shovel
-o	Normal
-•	Sharding/Syndics
-•	Replication
-o	MultiMaster
-o	Single Master
-•	Kafka is in consideration for async model for queuing system as it is very fast and tested one
-•	Python-mock for TDD
+* Multi processing by multiprocessing
+* Concurrent by concurrent	
+* Event driven
+* eventlet
+* Twisted
+* Tornado
+* Reactor
+* Twisted
+* Reactor
+* Fibers
+* Fibers
+* Greenlet
+* Coroutines/generator
+* Yield keyword/method
+* Easy system calls to run system commands
+* Sys, os, shutils etc
+* Pointers ????
+- Pointers.py pip
 
  ![alt text](https://github.com/samkrao/ipcmm/blob/main/architecture.png?raw=true)
 	
-Purpose:
+* Purpose:
 Provide configure management and monitoring system which is light weight and highly scalable , performant.
-Other features:
-•	On Demand push configuration in sync mode (connection is held till configuration is in progress)
-•	On Demand pull configuration management where agent is forced to apply latest configurations if any from configuration servers
-•	Reactor base configuration management. This will be part of push configuration but in async mode where the first configuration is pushed to agent and disconnected on the result returned by agent the workflow / orchestration of other configurations happens in similar fashion
-•	Nodes are not tied to any particular master or servers
-Security:
-•	Any communication between servers or servers and agents will be through two way ssl and with symmetric key encryption 
-•	Also between servers and agents the authentication is using service keys (including vault server) which will be changed at every stipulated time period like token based authentication
+* Other features:
+- On Demand push configuration in sync mode (connection is held till configuration is in progress)
+- On Demand pull configuration management where agent is forced to apply latest configurations if any from configuration servers
+- Reactor base configuration management. This will be part of push configuration but in async mode where the first configuration is pushed to agent and disconnected on the result returned by agent the workflow / orchestration of other configurations happens in similar fashion
+- Nodes are not tied to any particular master or servers
+* Security:
+- Any communication between servers or servers and agents will be through two way ssl and with symmetric key encryption
+- Also between servers and agents the authentication is using service keys (including vault server) which will be changed at every stipulated time period like token based authentication
 
-•	Master Servers
-o	Infra Provision
-o	Configuration on Agentless clients
-o	clusters (HA/Load balancing)/shards/federation/shovels
-•	Reactor Servers
-o	In agent base when configuring though Master in async mode
-o	Capture job /configuration status or events to process next event
-o	Clusters (active/passive or primary and secondary)
-•	Alerting/Reporting proxies
-o	Gather data regarding 
-	CPU
-	Memory
-	System Health
-	Configuration/job status
-o	Process and forward to Alert/monitoring server
-o	Alert/message to different messaging systems
-o	Clusters
-•	Alert And Monitoring Server
+* Components 
+- Master Servers
+- Infra Provision
+- Configuration on Agentless clients
+- clusters (HA/Load balancing)/shards/federation/shovels
+- Reactor Servers
++ In agent base when configuring though Master in async mode
++ Capture job /configuration status or events to process next event
+- Clusters (active/passive or primary and secondary)
+- Alerting/Reporting proxies
++ Gather data regarding 
++ CPU
++ Memory
++ System Health
+- Configuration/job status
+- Process and forward to Alert/monitoring server
+- Alert/message to different messaging systems
+- Clusters
+  Alert And Monitoring Server
 o	Store the information supplied by proxies to Database
 o	Multi Master and slaves
 •	Config Server
