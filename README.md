@@ -99,10 +99,10 @@ Provide configure management and monitoring system which is light weight and hig
 		+ lambda:
 	
 	\<Label\>:\
-  	  \   <build in functions\>:\
-	    \     - target:\
-	    \- env:
-	    \- args:
+  	  &nbsp; &nbsp; &nbsp; \<build in functions\>:\
+	    &ensp; &ensp; &ensp; &ensp; &ensp; &ensp;\- target:\
+	    &emsp; &emsp; &emps;&emsp; &empsp; &empsp;\- env:
+	    &empsp; &empsp; &emsp; &emsp; &emsp; &emsp; \- args:
 	        \- 1
 	        \- 2
 	    \- depends_on:
