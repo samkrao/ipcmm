@@ -39,7 +39,7 @@ Provide configure management and monitoring system which is light weight and hig
 - Also between servers and agents the authentication is using service keys (including vault server) which will be changed at every stipulated time period like token based authentication
 
 * Components 
-- Master Servers
+-- Master Servers
 - Infra Provision
 - Configuration on Agentless clients
 - clusters (HA/Load balancing)/shards/federation/shovels
