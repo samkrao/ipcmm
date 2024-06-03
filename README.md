@@ -1,2 +1,213 @@
 # ipcmm
 Configuration management and monitoring tool
+Why Python
+•	Scripting
+•	Fast development
+•	Available on almost all kinds of oses only installation needed is for windos
+•	Multi threading  byThread and threading
+•	Async by asyncio
+•	Multi processing by multiprocessing
+•	Concurrent by concurrent	
+•	Event driven
+o	eventlet
+o	Twisted
+o	Tornado
+•	Reactor
+o	Twisted
+o	Reactor
+•	Fibers
+o	Fibers
+o	Greenlet
+•	Coroutines/generator
+o	Yield keyword/method
+•	Easy system calls to run system commands
+o	Sys, os, shutils etc
+•	Pointers ????
+o	Pointers.py pip
+
+Our Software: Features
+•	Cluster
+o	HA
+o	Active/Passive
+o	Primary/Secondary
+•	Federation
+o	Shovel
+o	Normal
+•	Sharding/Syndics
+•	Replication
+o	MultiMaster
+o	Single Master
+•	Kafka is in consideration for async model for queuing system as it is very fast and tested one
+•	Python-mock for TDD
+
+ 
+	
+Purpose:
+Provide configure management and monitoring system which is light weight and highly scalable , performant.
+Other features:
+•	On Demand push configuration in sync mode (connection is held till configuration is in progress)
+•	On Demand pull configuration management where agent is forced to apply latest configurations if any from configuration servers
+•	Reactor base configuration management. This will be part of push configuration but in async mode where the first configuration is pushed to agent and disconnected on the result returned by agent the workflow / orchestration of other configurations happens in similar fashion
+•	Nodes are not tied to any particular master or servers
+Security:
+•	Any communication between servers or servers and agents will be through two way ssl and with symmetric key encryption 
+•	Also between servers and agents the authentication is using service keys (including vault server) which will be changed at every stipulated time period like token based authentication
+
+•	Master Servers
+o	Infra Provision
+o	Configuration on Agentless clients
+o	clusters (HA/Load balancing)/shards/federation/shovels
+•	Reactor Servers
+o	In agent base when configuring though Master in async mode
+o	Capture job /configuration status or events to process next event
+o	Clusters (active/passive or primary and secondary)
+•	Alerting/Reporting proxies
+o	Gather data regarding 
+	CPU
+	Memory
+	System Health
+	Configuration/job status
+o	Process and forward to Alert/monitoring server
+o	Alert/message to different messaging systems
+o	Clusters
+•	Alert And Monitoring Server
+o	Store the information supplied by proxies to Database
+o	Multi Master and slaves
+•	Config Server
+o	Parse the configuration information for syntax and Semantics and cache in sequence of commands
+o	Master slave replication or ring kind with raft or paxos with shards/federation/shovels
+•	Monitoring and Client Agents
+o	Retrieve configurations to be applied for the given node 
+o	Send system health data to event bus queues in regular intervals
+o	Send configuration status to evenbus queue
+o	Clusters
+•	DB
+o	Hold the configuration information
+o	Job/configuration status for each node
+o	Health check data of each node for further processing
+•	Event Bus Queues
+o	Asynchronous data handling
+•	Configuration languages
+o	YAML (Initial Release)
+o	JSON
+o	XML
+o	Property files
+o	Pre compiled and parsed for syntax and semantics upfront to pyc or any other native code rather than loading yamls/properties
+o	Any modifications to existing should be applied using diff (like virtual dom/incremental dom) means only modifications should be parsed and processed, not whole config file
+o	It should be one time activity by config servers
+
+•	Type of configurations
+o	Orchestrations runs on master
+o	confbooks
+
+•	Configuration section
+o	Declaration
+o	Definition
+o	Invoking custom definitions/built in definitions
+
+•	Syntax and semantics 
+•	declare:
+•	  in:
+•	  out:
+•	  inout:
+•	  ref:
+•	  ptr:
+•	  addr:
+•	
+•	define:
+•	  func:
+•	  proc:
+•	  lambda:
+•	
+•	<Label>:
+•	  <build in functions>:
+•	    - target:
+•	    - env:
+•	    - args:
+•	        - 1
+•	        - 2
+•	    - depends_on:
+•	    - requires/requires_any/requires_none:
+•	        - 1
+•	        - 2
+•	    - stoponfail: True | False
+•	    - modeofexec: [parallel |  concurrent | queue | sync | async | seq ]
+•	    - params:
+•	    - context:
+•	    - result:
+•	    - order:
+•	    - runafter:
+•	    - runbefore:
+•	    - onfail:
+•	    - onsuccess:
+•	    - onchange:
+•	    - runonsuccess:
+•	    - runonfail:
+•	    - watch:
+•	    - listen:
+•	    - prereq:
+•	    - postreq:
+•	    - use:
+•	    - onlyif:
+•	    - when:
+•	    - loop_if:
+•	    - loop_until:
+•	    - loop_in:
+•	    - test:
+•	    - runas:
+•	    - retry:
+•	        attempts: 3
+•	        interval: 10
+•	        until: True
+•	        splay: 60
+•	    
+•	#build in functions
+•	#ipcmm.run.cmd
+•	#ipcmm.run.script
+•	#ipcmm.include
+•	#ipcmm.import
+•	#ipcmm.call
+•	#ipcmm.invoke
+•	#ipcmm.exec
+•	#ipcmm.spawn
+•	#ipcmm.eval
+•	#ipcmm.apply
+•	#ipcmm.event
+•	#ipcmm.fire
+•	#ipcmm.bind
+•	#ipcmm.unbind
+•	#ipcmm.os
+•	#ipcmm.sys
+•	#ipcmm.vm
+•	#ipcmm.container
+•	#ipcmm.unik
+•	#ipcmm.hypervisor
+•	#ipcmm.crypto
+•	#ipcmm.network
+•	#ipcmm.filesystem
+•	#ipcmm.memory
+•	#ipcmm.cpu
+•	#ipcmm.nop
+•	#ipcmm.sleep
+•	#ipcmm.wait
+•	#ipcmm.parallel
+•	#ipcmm.concurrent
+•	#ipcmm.async
+•	#ipcmm.schedule
+•	#ipcmm.dynamic
+•	#ipcmm.static
+•	#ipcmm.fork
+•	#ipcmm.join
+•	#ipcmm.react
+•	#ipcmm.ssh
+•	#ipcmm.winrm
+•	#ipcmm.winrs
+•	#ipcmm.psremoting
+•	#ipcmm.psexec
+•	#ipcmm.scp
+•	#ipcmm.agents
+•	#ipcmm.servers
+•	#ipcmm.masters
+•	#ipcmm.slaves
+•	#ipcmm.nodes
+
