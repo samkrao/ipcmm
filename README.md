@@ -30,9 +30,9 @@ Scripting
 * Purpose:
 Provide configure management and monitoring system which is light weight and highly scalable , performant.
 * Other features:
-- On Demand push configuration in sync mode (connection is held till configuration is in progress)
-- On Demand pull configuration management where agent is forced to apply latest configurations if any from configuration servers
-- Reactor base configuration management. This will be part of push configuration but in async mode where the first configuration is pushed to agent and disconnected on the result returned by agent the workflow / orchestration of other configurations happens in similar fashion
+	- On Demand push configuration in sync mode (connection is held till configuration is in progress)
+	- On Demand pull configuration management where agent is forced to apply latest configurations if any from configuration servers
+	- Reactor base configuration management. This will be part of push configuration but in async mode where the first configuration is pushed to agent and disconnected on the result returned by agent the workflow / orchestration of other configurations happens in similar fashion
 - Nodes are not tied to any particular master or servers
 * Security:
 - Any communication between servers or servers and agents will be through two way ssl and with symmetric key encryption
