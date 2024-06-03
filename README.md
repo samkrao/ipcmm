@@ -1,11 +1,11 @@
 # ipcmm
 Configuration management and monitoring tool
 Why Python
-•	Scripting
-•	Fast development
-•	Available on almost all kinds of oses only installation needed is for windos
-•	Multi threading  byThread and threading
-•	Async by asyncio
+Scripting
+*Fast development
+*Available on almost all kinds of oses only installation needed is for windos
+*Multi threading  byThread and threading
+*Async by asyncio
 •	Multi processing by multiprocessing
 •	Concurrent by concurrent	
 •	Event driven
