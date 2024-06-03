@@ -100,11 +100,11 @@ Provide configure management and monitoring system which is light weight and hig
 	
 	\<Label\>:\
   	  &nbsp; &nbsp; &nbsp; \<build in functions\>:\
-	     &ensp; &ensp; &ensp; &ensp;\- target:\
-	     &emsp; &emsp; &emsp; \- env:\
-	     &emsp; &emsp; &emsp;  \- args:\
-	      &thinsp;&thinsp;&thinsp; &thinsp; &thinsp; \- 1\
-	      &thinsp; &thinsp; &thinsp; \- 2\
+	     &thinsp;&thinsp; &ensp; &ensp; &ensp; &ensp;\- target:\
+	     &thinsp;&thinsp; &emsp; &emsp; &emsp; \- env:\
+	     &thinsp;&thinsp; &emsp; &emsp; &emsp;  \- args:\
+	      &thinsp; &thinsp; &emsp; &emps; &emsp;\- 1\
+	      &thinsp; &thinsp; &thinsp;  &emsp; &emps; &emsp; \- 2\
 	    \- depends_on: 
 	    - requires/requires_any/requires_none:
 	        - 1
