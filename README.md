@@ -98,14 +98,14 @@ Provide configure management and monitoring system which is light weight and hig
 		+ proc:
 		+ lambda:
 	
-	<Label>:
-  	  <build in functions>:
-	    - target:
-	    - env:
-	    - args:
-	        - 1
-	        - 2
-	    - depends_on:
+	\<Label\>:
+  	  \<build in functions\>:
+	    \- target:
+	    \- env:
+	    \- args:
+	        \- 1
+	        \- 2
+	    \- depends_on:
 	    - requires/requires_any/requires_none:
 	        - 1
 	        - 2
