@@ -103,8 +103,8 @@ Provide configure management and monitoring system which is light weight and hig
 	     &thinsp; &thinsp; &ensp; &ensp; &ensp; &ensp;\- target:\
 	     &thinsp; &thinsp; &emsp; &emsp; &emsp; \- env:\
 	     &thinsp; &thinsp; &emsp; &emsp; &emsp;  \- args:\
-	     &thinsp; &thinsp; &emsp; &emsp; &emsp;\- 1\
-	     &thinsp; &thinsp; &emsp; &emsp; &emsp; \- 2\
+	     &thinsp; &thinsp; &ensp; &emsp; &emsp; &emsp;\- 1\
+	     &thinsp; &thinsp; &ensp; &emsp; &emsp; &emsp; \- 2\
 	    \- depends_on: 
 	    - requires/requires_any/requires_none:
 	        - 1
