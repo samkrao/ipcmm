@@ -99,8 +99,8 @@ Provide configure management and monitoring system which is light weight and hig
 		+ lambda:
 	
 	\<Label\>:\
-  	  $~~~~$\<build in functions\>:\
-	    $~~~~~~$\- target:\
+  	  \   <build in functions\>:\
+	    \     - target:\
 	    \- env:
 	    \- args:
 	        \- 1
