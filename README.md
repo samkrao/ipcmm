@@ -40,7 +40,7 @@ o	Single Master
 •	Kafka is in consideration for async model for queuing system as it is very fast and tested one
 •	Python-mock for TDD
 
- 
+ ![alt text](https://github.com/samkrao/ipcmm/blob/main/architecture.png?raw=true)
 	
 Purpose:
 Provide configure management and monitoring system which is light weight and highly scalable , performant.
