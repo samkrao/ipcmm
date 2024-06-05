@@ -104,7 +104,7 @@ Provide configure management and monitoring system which is light weight and hig
 	     &thinsp; &thinsp; &emsp; &emsp; &emsp; \- env:\
 	     &thinsp; &thinsp; &emsp; &emsp; &emsp;  \- args:\
 	     &thinsp; &thinsp; &nbsp; &ensp; &emsp; &emsp; &emsp;\- 1\
-	     &thinsp; &nbsp; &ensp; &emsp; &emsp; &emsp; \- 2\
+	     &thinsp;&thinsp; &nbsp; &ensp; &emsp; &emsp; &emsp; \- 2\
 	    \- depends_on: 
 	    - requires/requires_any/requires_none:
 	        - 1
