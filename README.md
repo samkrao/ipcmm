@@ -107,86 +107,87 @@ Provide configure management and monitoring system which is light weight and hig
 	     &thinsp;&thinsp; &nbsp; &ensp; &emsp; &emsp; &emsp; \- 2\
 	     &thinsp; &thinsp; &emsp; &emsp; &emsp; \- depends_on:\
 	     &thinsp; &thinsp; &emsp; &emsp; &emsp; \- requires/requires_any/requires_none:\
-	     &thinsp; &thinsp; &nbsp; &ensp; &emsp; &emsp; &emsp;\- 1\
-	     &thinsp; &thinsp; &nbsp; &ensp; &emsp; &emsp; &emsp;\- 2\
-	    - stoponfail: True | False
-	    - modeofexec: [parallel |  concurrent | queue | sync | async | seq ]
-	    - params:
- 	    - context:
-	    - result:
-	    - order:
-	    - runafter:
-	    - runbefore:
-	    - onfail:
-	    - onsuccess:
-	    - onchange:
-	    - runonsuccess:
-	    - runonfail:
-	    - watch:
-	    - listen:
-	    - prereq:
-	    - postreq:
-	    - use:
-	    - onlyif:
-	    - when:
-	    - loop_if:
-	    - loop_until:
-	    - loop_in:
-	    - test:
-	    - runas:
-	    - retry:
-	        attempts: 3
-	        interval: 10
-	        until: True
-	        splay: 60
+	     &thinsp; &thinsp; &nbsp;&nbsp;&nbsp; &ensp; &emsp; &emsp; &emsp;\- 1\
+	     &thinsp; &thinsp; &nbsp;&nbsp;&nbsp; &ensp; &emsp; &emsp; &emsp;\- 2\
+	     &thinsp; &thinsp; &ensp; &ensp; &ensp; &ensp;\- stoponfail: True | False\
+	     &thinsp; &thinsp; &ensp; &ensp; &ensp; &ensp;\- modeofexec: [parallel |  concurrent | queue | sync | async | seq ]\
+	     &thinsp; &thinsp; &ensp; &ensp; &ensp; &ensp;\- params:\
+ 	     &thinsp; &thinsp; &ensp; &ensp; &ensp; &ensp;\- context:\
+	     &thinsp; &thinsp; &ensp; &ensp; &ensp; &ensp;\- result:\
+	     &thinsp; &thinsp; &ensp; &ensp; &ensp; &ensp;\- order:\
+	     &thinsp; &thinsp; &ensp; &ensp; &ensp; &ensp;\- runafter:\
+	     &thinsp; &thinsp; &ensp; &ensp; &ensp; &ensp;\- runbefore:\
+             &thinsp; &thinsp; &ensp; &ensp; &ensp; &ensp;\- runaround:\
+	     &thinsp; &thinsp; &ensp; &ensp; &ensp; &ensp;\- onfail:\
+	     &thinsp; &thinsp; &ensp; &ensp; &ensp; &ensp;\- onsuccess:\
+	     &thinsp; &thinsp; &ensp; &ensp; &ensp; &ensp;\- onchange:\
+	     &thinsp; &thinsp; &ensp; &ensp; &ensp; &ensp;\- runonsuccess:\
+	     &thinsp; &thinsp; &ensp; &ensp; &ensp; &ensp;\- runonfail:\
+	     &thinsp; &thinsp; &ensp; &ensp; &ensp; &ensp;\- watch:\
+	     &thinsp; &thinsp; &ensp; &ensp; &ensp; &ensp;\- listen:\
+	     &thinsp; &thinsp; &ensp; &ensp; &ensp; &ensp;\- prereq:\
+	     &thinsp; &thinsp; &ensp; &ensp; &ensp; &ensp;\- postreq:\
+	     &thinsp; &thinsp; &ensp; &ensp; &ensp; &ensp;\- use:\
+	     &thinsp; &thinsp; &ensp; &ensp; &ensp; &ensp;\- onlyif:\
+	     &thinsp; &thinsp; &ensp; &ensp; &ensp; &ensp;\- when:\
+	     &thinsp; &thinsp; &ensp; &ensp; &ensp; &ensp;\- loop_if:\
+	     &thinsp; &thinsp; &ensp; &ensp; &ensp; &ensp;\- loop_until:\
+	     &thinsp; &thinsp; &ensp; &ensp; &ensp; &ensp;\- loop_in:\
+	     &thinsp; &thinsp; &ensp; &ensp; &ensp; &ensp;\- test:\
+	     &thinsp; &thinsp; &ensp; &ensp; &ensp; &ensp;\- runas:\
+	     &thinsp; &thinsp; &ensp; &ensp; &ensp; &ensp;\- retry:\
+	     &thinsp; &thinsp; &nbsp;&nbsp;&nbsp; &ensp; &emsp; &emsp; &emsp;\attempts: 3\
+	     &thinsp; &thinsp; &nbsp;&nbsp;&nbsp; &ensp; &emsp; &emsp; &emsp;\interval: 10\
+	     &thinsp; &thinsp; &nbsp;&nbsp;&nbsp; &ensp; &emsp; &emsp; &emsp;\until: True\
+	     &thinsp; &thinsp; &nbsp;&nbsp;&nbsp; &ensp; &emsp; &emsp; &emsp;\splay: 60\
 	    
-	#build in functions
-	#ipcmm.run.cmd
-	#ipcmm.run.script
-	#ipcmm.include
-	#ipcmm.import
-	#ipcmm.call
-	#ipcmm.invoke
-	#ipcmm.exec
-	#ipcmm.spawn
-	#ipcmm.eval
-	#ipcmm.apply
-	#ipcmm.event
-	#ipcmm.fire
-	#ipcmm.bind
-	#ipcmm.unbind
-	#ipcmm.os
-	#ipcmm.sys
-	#ipcmm.vm
-	#ipcmm.container
-	#ipcmm.unik
-	#ipcmm.hypervisor
-	#ipcmm.crypto
-	#ipcmm.network
-	#ipcmm.filesystem
-	#ipcmm.memory
-•	#ipcmm.cpu
-•	#ipcmm.nop
-•	#ipcmm.sleep
-•	#ipcmm.wait
-•	#ipcmm.parallel
-•	#ipcmm.concurrent
-•	#ipcmm.async
-•	#ipcmm.schedule
-•	#ipcmm.dynamic
-•	#ipcmm.static
-•	#ipcmm.fork
-•	#ipcmm.join
-•	#ipcmm.react
-•	#ipcmm.ssh
-•	#ipcmm.winrm
-•	#ipcmm.winrs
-•	#ipcmm.psremoting
-•	#ipcmm.psexec
-•	#ipcmm.scp
-•	#ipcmm.agents
-•	#ipcmm.servers
-•	#ipcmm.masters
-•	#ipcmm.slaves
-•	#ipcmm.nodes
+	\#build in functions\
+	\#ipcmm.run.cmd\
+	\#ipcmm.run.script\
+	\#ipcmm.include\
+	\#ipcmm.import\
+	\#ipcmm.call\
+	\#ipcmm.invoke\
+	\#ipcmm.exec\
+	\#ipcmm.spawn\
+	\#ipcmm.eval\
+	\#ipcmm.apply\
+	\#ipcmm.event\
+	\#ipcmm.fire\
+	\#ipcmm.bind\
+	\#ipcmm.unbind\
+	\#ipcmm.os\
+	\#ipcmm.sys\
+	\#ipcmm.vm\
+	\#ipcmm.container\
+	\#ipcmm.unik\
+	\#ipcmm.hypervisor\
+	\#ipcmm.crypto\
+	\#ipcmm.network\
+	\#ipcmm.filesystem\
+  	\#ipcmm.memory\
+  	\#ipcmm.cpu\
+  	\#ipcmm.nop\
+  	\#ipcmm.sleep\
+  	\#ipcmm.wait\
+  	\#ipcmm.parallel\
+  	\#ipcmm.concurrent\
+  	\#ipcmm.async\
+  	\#ipcmm.schedule\
+  	\#ipcmm.dynamic\
+  	\#ipcmm.static\
+  	\#ipcmm.fork\
+  	\#ipcmm.join\
+  	\#ipcmm.react\
+  	\#ipcmm.ssh\
+  	\#ipcmm.winrm\
+  	\#ipcmm.winrs\
+  	\#ipcmm.psremoting\
+  	\#ipcmm.psexec\
+  	\#ipcmm.scp\
+  	\#ipcmm.agents\
+  	\#ipcmm.servers\
+  	\#ipcmm.masters\
+	\#ipcmm.slaves\
+	\#ipcmm.nodes\
 
