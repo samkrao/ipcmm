@@ -190,7 +190,8 @@ Scripting
 * Easy system calls to run system commands
 * Sys, os, shutils etc
 * Pointers ????\
-&thinsp; &thinsp; &nbsp;\- Pointers.py pip
+&thinsp; &thinsp; &nbsp;\- Pointers.py pip \
+
 *# Stable version\
 &thinsp; &thinsp; &nbsp;\- python -m pip install -U nuitka\
 
