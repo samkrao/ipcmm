@@ -140,7 +140,7 @@ Provide configure management and monitoring system which is light weight and hig
 	     &thinsp; &thinsp; &nbsp;&nbsp;&nbsp; &ensp; &emsp; &emsp; &emsp;interval: 10\
 	     &thinsp; &thinsp; &nbsp;&nbsp;&nbsp; &ensp; &emsp; &emsp; &emsp;until: True\
 	     &thinsp; &thinsp; &nbsp;&nbsp;&nbsp; &ensp; &emsp; &emsp; &emsp;splay: 60\
-	     \&nbsp;\   
+	     \&nbsp; 
 	\#build in functions\
 	\#ipcmm.run.cmd\
 	\#ipcmm.run.script\
