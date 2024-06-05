@@ -105,10 +105,10 @@ Provide configure management and monitoring system which is light weight and hig
 	     &thinsp; &thinsp; &emsp; &emsp; &emsp;  \- args:\
 	     &thinsp; &thinsp; &nbsp; &ensp; &emsp; &emsp; &emsp;\- 1\
 	     &thinsp;&thinsp; &nbsp; &ensp; &emsp; &emsp; &emsp; \- 2\
-	     &thinsp; &thinsp; &emsp; &emsp; &emsp; \- depends_on: 
-	     &thinsp; &thinsp; &emsp; &emsp; &emsp; \- requires/requires_any/requires_none:
-	     &thinsp; &thinsp; &nbsp; &ensp; &emsp; &emsp; &emsp;\- 1
-	     &thinsp; &thinsp; &nbsp; &ensp; &emsp; &emsp; &emsp;\- 2
+	     &thinsp; &thinsp; &emsp; &emsp; &emsp; \- depends_on:\
+	     &thinsp; &thinsp; &emsp; &emsp; &emsp; \- requires/requires_any/requires_none:\
+	     &thinsp; &thinsp; &nbsp; &ensp; &emsp; &emsp; &emsp;\- 1\
+	     &thinsp; &thinsp; &nbsp; &ensp; &emsp; &emsp; &emsp;\- 2\
 	    - stoponfail: True | False
 	    - modeofexec: [parallel |  concurrent | queue | sync | async | seq ]
 	    - params:
