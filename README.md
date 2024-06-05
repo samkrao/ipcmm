@@ -136,11 +136,11 @@ Provide configure management and monitoring system which is light weight and hig
 	     &thinsp; &thinsp; &ensp; &ensp; &ensp; &ensp;\- test:\
 	     &thinsp; &thinsp; &ensp; &ensp; &ensp; &ensp;\- runas:\
 	     &thinsp; &thinsp; &ensp; &ensp; &ensp; &ensp;\- retry:\
-	     &thinsp; &thinsp; &nbsp;&nbsp;&nbsp; &ensp; &emsp; &emsp; &emsp;\attempts: 3\
-	     &thinsp; &thinsp; &nbsp;&nbsp;&nbsp; &ensp; &emsp; &emsp; &emsp;\interval: 10\
-	     &thinsp; &thinsp; &nbsp;&nbsp;&nbsp; &ensp; &emsp; &emsp; &emsp;\until: True\
-	     &thinsp; &thinsp; &nbsp;&nbsp;&nbsp; &ensp; &emsp; &emsp; &emsp;\splay: 60\
-	     \&nbsp\   
+	     &thinsp; &thinsp; &nbsp;&nbsp;&nbsp; &ensp; &emsp; &emsp; &emsp;attempts: 3\
+	     &thinsp; &thinsp; &nbsp;&nbsp;&nbsp; &ensp; &emsp; &emsp; &emsp;interval: 10\
+	     &thinsp; &thinsp; &nbsp;&nbsp;&nbsp; &ensp; &emsp; &emsp; &emsp;until: True\
+	     &thinsp; &thinsp; &nbsp;&nbsp;&nbsp; &ensp; &emsp; &emsp; &emsp;splay: 60\
+	     \&nbsp;\   
 	\#build in functions\
 	\#ipcmm.run.cmd\
 	\#ipcmm.run.script\
