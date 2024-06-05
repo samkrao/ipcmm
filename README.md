@@ -190,4 +190,4 @@ Scripting
 * Easy system calls to run system commands
 * Sys, os, shutils etc
 * Pointers ????\
-&thinsp; &thinsp; &nbsp;\- Pointers.py pip\
+&thinsp; &thinsp; &nbsp;\- Pointers.py pip
