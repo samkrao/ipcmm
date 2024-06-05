@@ -1,29 +1,5 @@
 # ipcmm
 Configuration management and monitoring tool
-Why Python
-Scripting
-* Fast development
-* Available on almost all kinds of oses only installation needed is for windos
-* Multi threading  byThread and threading
-* Async by asyncio
-* Multi processing by multiprocessing
-* Concurrent by concurrent	
-* Event driven
-* eventlet
-* Twisted
-* Tornado
-* Reactor
-* Twisted
-* Reactor
-* Fibers
-* Fibers
-* Greenlet
-* Coroutines/generator
-* Yield keyword/method
-* Easy system calls to run system commands
-* Sys, os, shutils etc
-* Pointers ????
-- Pointers.py pip
 
  ![alt text](https://github.com/samkrao/ipcmm/blob/main/architecture.png?raw=true)
 	
@@ -191,3 +167,27 @@ Provide configure management and monitoring system which is light weight and hig
 	\#ipcmm.slaves\
 	\#ipcmm.nodes
 
+Why Python
+Scripting
+* Fast development
+* Available on almost all kinds of oses only installation needed is for windos
+* Multi threading  byThread and threading
+* Async by asyncio
+* Multi processing by multiprocessing
+* Concurrent by concurrent	
+* Event driven
+* eventlet
+* Twisted
+* Tornado
+* Reactor
+* Twisted
+* Reactor
+* Fibers
+* Fibers
+* Greenlet
+* Coroutines/generator
+* Yield keyword/method
+* Easy system calls to run system commands
+* Sys, os, shutils etc
+* Pointers ????
+&thinsp; &thinsp; &nbsp;- Pointers.py pip
