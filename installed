@@ -1,6 +1,6 @@
-reactor
-twisted
-tornodo
-psutil
-nuitka
-pointers
+python -m pip install -U reactor -t ipcmm/lib/
+python -m pip install -U twisted -t ipcmm/lib/
+python -m pip install -U tornodo -t ipcmm/lib/
+python -m pip install -U psutil -t ipcmm/lib/
+python -m pip install -U nuitka -t ipcmm/lib/
+python -m pip install -U pointers.py -t ipcmm/lib/
