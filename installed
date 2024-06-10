@@ -4,3 +4,9 @@ python -m pip install -U tornodo -t ipcmm/lib/
 python -m pip install -U psutil -t ipcmm/lib/
 python -m pip install -U nuitka -t ipcmm/lib/
 python -m pip install -U pointers.py -t ipcmm/lib/
+python -m pip install -U eventlet -t /appl/ipcmm/lib/
+python -m pip install -U greenlet -t /appl/ipcmm/lib/
+python -m pip install -U asyncio -t /appl/ipcmm/lib/
+python -m pip install -U coroutines -t /appl/ipcmm/lib/
+python -m pip install -U generators -t /appl/ipcmm/lib/
+python -m pip install -U essential-generators -t /appl/ipcmm/lib/

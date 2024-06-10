@@ -184,7 +184,7 @@ Scripting
 * Twisted
 * Reactor
 * Fibers
-* Fibers
+* Fiber
 * Greenlet
 * Coroutines/generator
 * Yield keyword/method
