@@ -111,6 +111,7 @@ Provide configure management and monitoring system which is light weight and hig
 	     &thinsp; &thinsp; &ensp; &ensp; &ensp; &ensp;\- loop_in:\
 	     &thinsp; &thinsp; &ensp; &ensp; &ensp; &ensp;\- test:\
 	     &thinsp; &thinsp; &ensp; &ensp; &ensp; &ensp;\- runas:\
+             &thinsp; &thinsp; &ensp; &ensp; &ensp; &ensp;\- wait:\
 	     &thinsp; &thinsp; &ensp; &ensp; &ensp; &ensp;\- retry:\
 	     &thinsp; &thinsp; &nbsp;&nbsp;&nbsp; &ensp; &emsp; &emsp; &emsp;attempts: 3\
 	     &thinsp; &thinsp; &nbsp;&nbsp;&nbsp; &ensp; &emsp; &emsp; &emsp;interval: 10\
