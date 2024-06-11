@@ -25,7 +25,7 @@ python -m pip install -U coroutines -t /appl/ipcmm/lib/
 python -m pip install -U generators -t /appl/ipcmm/lib/
 python -m pip install -U essential-generators -t /appl/ipcmm/lib/
 python -m pip install -U stacket -t /appl/ipcmm/lib/
-
+python -m pip install 'git+https://github.com/salesforce/decorator-operations'
 deactivate
 
 git clone https://github.com/saghul/python-fibers
