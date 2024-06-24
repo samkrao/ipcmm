@@ -5,6 +5,12 @@ Configuration management and monitoring tool
 	
 * Purpose:
 Provide configure management and monitoring system which is light weight and highly scalable , performant.
+* What problem we are trying to solve
+  Currently most of the configuration management tools are console base
+     * Providing nice UI to operate
+     * Performance monitoring with customizable by integration to any performance monitoring tool a
+     * Security monitoring with customizatble by integration to any security testing tool
+     * Network monitoring with customizable by intigration to any network monitoring tool
 * Other features:
 	- On Demand push configuration in sync mode (connection is held till configuration is in progress)
 	- On Demand pull configuration management where agent is forced to apply latest configurations if any from configuration servers
