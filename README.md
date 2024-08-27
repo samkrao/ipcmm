@@ -151,6 +151,10 @@ Provide configure management and monitoring system which is light weight and hig
   	\#ipcmm.memory\
   	\#ipcmm.cpu\
   	\#ipcmm.nop\
+  	   + success.with_return
+           + success.with_gotostate
+           + fail.with_return
+           + fail.with_gotostate
   	\#ipcmm.sleep\
   	\#ipcmm.wait\
   	\#ipcmm.parallel\
