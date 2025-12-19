@@ -1,3 +1,6 @@
 [submodule "libs/Nuitka-python"]
 	path = libs/Nuitka-python
 	url = https://github.com/Nuitka/Nuitka.git
+[submodule "libs/pointers"]
+	path = libs/pointers
+	url = https://github.com/ZeroIntensity/pointers.py.git
