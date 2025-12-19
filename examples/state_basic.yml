@@ -1,0 +1,6 @@
+- cmd.run:
+    name: "echo hello-from-minisalt && uname -a"
+- file.managed:
+    path: "/tmp/minisalt_hello.txt"
+    content: "Hello from mini-salt!\n"
+    mode: "0644"

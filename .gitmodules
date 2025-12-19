@@ -1,0 +1,3 @@
+[submodule "libs/Nuitka-python"]
+	path = libs/Nuitka-python
+	url = https://github.com/Nuitka/Nuitka.git
